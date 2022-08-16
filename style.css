@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,60px);
+    grid-template-rows: repeat(7,60px);
+    font-family: 'Courier New', monospace;
+    
+    
+}
+
+
+
+.current-number {
+    grid-row-start: 2;
+    font-size: 1.4rem;
+}
+
+.operator{
+ background-color: rgb(255, 215, 0, 0.8);
+}
+
+.operator:hover {
+   background-color: rgb(255, 215, 0, 0.6); 
+}
+
+.result-bar{
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    word-break: break-all;
+
+}
+
+
+
+
+
+#clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#zero {
+    grid-column-start: 1; 
+    grid-column-end: 3;
+}
+
